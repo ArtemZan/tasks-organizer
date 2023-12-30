@@ -13,6 +13,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 body {
   margin: 0;
 }
@@ -38,7 +40,11 @@ body {
   word-break: break-word;
 }
 
-
+.root-paper {
+  
+  height: 100vh;
+  margin: 1em;
+}
 
 @media screen and (max-width: 600px) {
   .add-task-dialog .MuiSlider-root {
@@ -56,5 +62,10 @@ body {
 
   .add-task-dialog .MuiDialogContent-root {
     max-width: 100vw;
+  }
+
+  .MuiPaper-root.root-paper{
+    margin: 0;
+    border-radius: 0;
   }
 }

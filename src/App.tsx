@@ -5,7 +5,6 @@ import { AddTask } from "./tasks/AddTask"
 import { Stack, Paper } from "@mui/material"
 import { LabeledSlider } from "./utils/FormikSlider"
 import { mapExponentially } from "./utils/mapExponentially"
-import { useDebounce } from "./utils/useDebounce"
 
 const perfectDesireToImportanceRatio = 0.25
 
@@ -72,7 +71,7 @@ function App() {
     setTasks(tasks => tasks.filter(task => task.id !== id))
   }
 
-  return <Paper sx={{ margin: "1em", padding: "1em" }}>
+  return <Paper sx={{ padding: "1em" }} className="root-paper">
     <Stack
       direction="column">
 

@@ -32,7 +32,7 @@ function useFormattedTasks(tasks: Task[], desireCoefficient: number) {
 
     const prevRatio = useRef<number>()
 
-    const debounceDesireRatio = useDebounce(3000)
+    const debounceDesireRatio = useDebounce(300)
 
     // console.log(isLoading)
     const isRatioSame = prevRatio.current === desireCoefficient || prevRatio.current === undefined
