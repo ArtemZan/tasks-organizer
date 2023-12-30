@@ -45,7 +45,7 @@ body {
 }
 
 .root-paper {
-  
+  box-sizing: border-box;
   height: 100vh;
   margin: 1em;
 }
@@ -71,5 +71,6 @@ body {
   .MuiPaper-root.root-paper{
     margin: 0;
     border-radius: 0;
+    padding: 1em 0.25em;
   }
 }
