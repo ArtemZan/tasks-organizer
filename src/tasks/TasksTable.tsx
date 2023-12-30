@@ -124,11 +124,12 @@ export function TasksTable({ desireCoefficient, tasks, deleteTask, setTasks }: T
     }
 
 
-    return <div style={{ position: "relative" }}>
+    return <div style={{ position: "relative", overflow: "auto" }}>
 
         <Table
             variant="soft"
-            color="neutral">
+            color="neutral"
+            className="tasks-table">
             <thead>
                 <tr>
                     <th>Task</th>

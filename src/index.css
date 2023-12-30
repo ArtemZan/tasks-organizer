@@ -33,6 +33,10 @@ body {
   margin-bottom: 100px;
 }
 
+.tasks-table{
+  min-width: 600px;
+}
+
 .add-task-dialog .MuiSlider-root .MuiSlider-markLabel {
   width: max-content;
   max-width: 80px;
